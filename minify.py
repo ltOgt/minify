@@ -9,8 +9,8 @@ import urllib.request as request
 
 SWITCH = {
     "plato.stanford.edu" : lambda soup: soup.find(
-        'div', id="article-content"
-    ).find(
+    #    'div', id="article-content"
+    #).find(
         'div', id="aueditable"
     ),
     "towardsdatascience.com" : lambda soup: soup.find(

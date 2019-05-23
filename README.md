@@ -16,6 +16,6 @@ SWITCH = {
 }
 ```
 
-Run the script `$ ./minify <url>`
+Run the script `$ ./minify subsite.mysite.top/burried-content.html > minified_content.html`
 
 # OK

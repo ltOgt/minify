@@ -1,5 +1,6 @@
 # What is this
 This lets me define and cut out the content of pages for simpler reading and archiving, which is nice.
+
 The minimal target HTML uses [readable-css](https://github.com/nicokant/readable-css).
 
 # How

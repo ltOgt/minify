@@ -1,17 +1,21 @@
 # What is this
 This lets me define and cut out the content of pages for simpler reading and archiving, which is nice.
 
+The minimal target HTML uses [readable-css](https://github.com/nicokant/readable-css).
+
 # How
 Find the youngest child node that encapsulates all of the actual content.
 Define a beautiful soup filter lambda.
 ```py
-"subsite.mysite.top" : lambda soup: soup.find(
-	'div', id="all-content-is-here"
-).find(
-	'div', {"class" : "but-actually-it-starts-here"}
-)
+SWITCH = {
+	"subsite.mysite.top" : lambda soup: soup.find(
+		'div', id="all-content-is-here"
+	).find(
+		'div', {"class" : "but-actually-it-starts-here"}
+	),
+}
 ```
 
-Run the script `$ ./minify <url>`
+Run the script `$ ./minify subsite.mysite.top/burried-content.html > minified_content.html`
 
 # OK

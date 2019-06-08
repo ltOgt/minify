@@ -16,6 +16,12 @@ SWITCH = {
     "towardsdatascience.com" : lambda soup: soup.find(
         'div', {"class" : "section-content"}
     ),
+    "www.wired.com" : lambda soup: soup.find(
+        'main', {"class" : "article-main-component__content"}
+    ),
+    "web.archive.org": lambda soup: soup.find(
+        'div', {"class" : "container"}
+    ),
 }
 
 def print_usage():
